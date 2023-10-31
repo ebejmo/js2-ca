@@ -1,0 +1,19 @@
+{
+  "name": "js2-ca",
+  "version": "0.0.1",
+  "description": "JavaScript front end for existing social media application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ebejmo/js2-ca.git)"
+  },
+  "keywords": [
+    "js",
+    "bootstrap"
+  ],
+  "author": "Emil Bejmo <EmiBej62884@stud.noroff.no>",
+  "license": "ISC"
+}
