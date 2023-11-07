@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Noroff Social</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="module" src="/src/js/index.mjs" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #e3f2fd"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="/index.html"
+            data-ol-has-click-handler=""
+            >Noroff Social</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse collapse show"
+            id="navbarColor03"
+            style=""
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                data-ol-has-click-handler=""
+                >Home</a
+              >
+            </li> -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/profile/login/"
+                  data-ol-has-click-handler=""
+                  >Log In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/profile/register/"
+                  data-ol-has-click-handler=""
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <!-- SEARCH NEEDED ON HOMEPAGE? <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <div class="container">
+        <h1>Register</h1>
+        <form id="registerForm" method="post" action="/auth/register">
+          <div class="mb-3">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              required
+              pattern="^[\w]+$"
+              title="User name must be lower or upper case, numbers and/or underscore. Example: yourName123"
+            />
+            <span id="nameHelpInline" class="form-text"> Your username. </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Only @(stud.)noroff.no domains are allowed to register."
+            />
+            <span id="emailHelpInline" class="form-text">
+              We'll never share your email with anyone else. I hope.
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="email"
+              required
+              minlength="8"
+            />
+            <span id="passwordHelpInline" class="form-text"
+              >Must be minimum 8 characters long.</span
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="banner">Banner</label>
+            <input type="url" class="form-control" name="banner" />
+            <span id="bannerHelpInline" class="form-text"> (Optional) </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="avatar">Avatar</label>
+            <input type="url" class="form-control" name="avatar" />
+            <span id="avatarHelpInline" class="form-text"> (Optional) </span>
+          </div>
+
+          <button class="btn btn-dark btn-lg px-4 gap-3">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
