@@ -12,60 +12,73 @@
     <script type="module" src="/src/js/index.mjs" defer></script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg"
-      style="background-color: #e3f2fd"
-      data-bs-theme="light"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" data-ol-has-click-handler=""
-          >Noroff Social</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor03"
-          aria-controls="navbarColor03"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse show" id="navbarColor03" style="">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                data-ol-has-click-handler=""
-                >Home</a
-              >
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-ol-has-click-handler=""
-                >Log In</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-ol-has-click-handler=""
-                >Register</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #e3f2fd"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/" data-ol-has-click-handler=""
+            >Noroff Social</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse collapse show"
+            id="navbarColor03"
+            style=""
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-ol-has-click-handler=""
+                  >Home</a
+                >
+              </li> -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/profile/login/"
+                  data-ol-has-click-handler=""
+                  >Log In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/profile/register/"
+                  data-ol-has-click-handler=""
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <!-- SEARCH NEEDED ON HOMEPAGE? <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form> -->
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <div class="px-4 py-5 my-5 text-center">
       <h1 class="display-5 fw-bold text-body-emphasis">Noroff Social</h1>
       <div class="col-lg-6 mx-auto">
