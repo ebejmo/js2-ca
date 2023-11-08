@@ -14,6 +14,6 @@ export function setRegisterEventFormListener() {
     const method = form.method;
 
     // api send
-    register(profile, action, method);
+    register(profile);
   });
 }
