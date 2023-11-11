@@ -17,6 +17,10 @@ export async function register(profile) {
 
     const result = await response.json();
     console.log(result);
+
+    // FIX THIS TO MAKE BETTER UX
+    alert("You are now registered. Click here to log in");
+    return result;
   } catch (error) {
     console.log("Error happened:", error);
   }

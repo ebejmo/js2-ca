@@ -81,5 +81,42 @@
         </div>
       </nav>
     </header>
+    <main class="">
+      <div class="container">
+        <h1>Log In</h1>
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Only @(stud.)noroff.no domains are allowed to register."
+            />
+            <span id="emailHelpInline" class="form-text">
+              We'll never share your email with anyone else. I hope.
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              required
+              minlength="8"
+            />
+            <span id="passwordHelpInline" class="form-text"
+              >Must be minimum 8 characters long.</span
+            >
+          </div>
+
+          <button class="btn btn-dark btn-lg px-4 gap-3">Log In</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
