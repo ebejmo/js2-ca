@@ -9,9 +9,13 @@ export function headers() {
   };
 }
 
-export async function fetchWithToken(url, options) {
-  return fetch(url, {
-    ...options, // options is the body
-    headers: headers(), // returns the everything inside headers
-  });
+export async function fetchWithToken(url, options = {}) {
+  try {
+    return fetch(url, {
+      ...options, // options is the body
+      headers: headers(), // returns the everything inside headers
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
