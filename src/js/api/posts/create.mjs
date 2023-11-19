@@ -12,9 +12,8 @@ export async function createPost(postData) {
       method,
       body: JSON.stringify(postData),
     });
-    const post = await response.json();
-    console.log(post);
+    return await response.json();
   } catch (error) {
-    console.log(error);
+    console.log("THIS IS THE ERROR:", error);
   }
 }
